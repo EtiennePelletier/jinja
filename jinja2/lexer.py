@@ -621,7 +621,7 @@ class Lexer(object):
 
         balancing_stack = []
 
-        while 1:
+        while True:
             # tokenizer loop
             for regex, tokens, new_state in statetokens:
                 m = regex.match(source, pos)

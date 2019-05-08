@@ -1244,7 +1244,7 @@ class TemplateStream(object):
         c_size = 0
         push = buf.append
 
-        while 1:
+        while True:
             try:
                 while c_size < size:
                     c = next(self._gen)
